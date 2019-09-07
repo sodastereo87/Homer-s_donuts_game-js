@@ -1,0 +1,77 @@
+body {
+    padding-top: 100px;
+    background-color: skyblue;
+    background-image: url("https://orig00.deviantart.net/4797/f/2014/297/d/a/homer_simpson_vector_by_billybobfm-d83z9va.png");
+    background-image: left;
+    height: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 570px 800px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    font-style: oblique;
+}
+
+h3 {
+    font-size: 25px;
+    font-style: initial;
+}
+
+button {
+  width: 20%;
+  height: 4rem;
+  background-color: palevioletred;
+  color: white;
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(100px, 200px));
+  grid-gap: 10px;
+}
+
+.guac-bowl {
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bowl {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.avocado {
+  position: absolute;
+  z-index: 0;
+  cursor: grab;
+  width: 60%;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  margin: 0 auto;
+  transition: all 0.4s;
+}
+
+.up {
+  bottom: 120px;
+}
